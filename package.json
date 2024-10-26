@@ -1,0 +1,47 @@
+{
+  "name": "point-story",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx tsx watch src/app.ts",
+    "generate:route:win": "cd scripts && cmd /c generate-route.bat",
+    "generate:route:unix": "cd scripts && generate-route.sh",
+    "generate:route": "node generate-route.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/cors": "^10.0.1",
+    "@fastify/redis": "^7.0.1",
+    "crypto": "^1.0.1",
+    "deep-equal": "^2.2.3",
+    "dotenv": "^16.4.5",
+    "fastify": "^5.0.0",
+    "fastify-guard": "^2.0.0",
+    "fastify-socket.io": "^5.1.0",
+    "fastify-zod": "^1.4.0",
+    "pino": "^9.5.0",
+    "pino-pretty": "^11.3.0",
+    "socket": "^0.14.12",
+    "socket.io": "^4.8.1",
+    "uuid": "^10.0.0",
+    "zennv": "^0.1.1",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.8.1",
+    "@types/uuid": "^10.0.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "prettier": "^3.3.3",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.3",
+    "typescript-eslint": "^8.11.0",
+    "zod-to-json-schema": "^3.23.5"
+  }
+}
