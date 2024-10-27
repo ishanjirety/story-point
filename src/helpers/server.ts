@@ -16,7 +16,7 @@ const app = await fastify({
   pluginTimeout: 10000,
 });
 app.register(cors, {
-  origin: "http://localhost:5173", // Ensure this exactly matches your client origin
+  origin: "http://localhost:5174", // Ensure this exactly matches your client origin
   methods: ["GET", "POST"], // Allow necessary methods
   allowedHeaders: ["Content-Type"], // Minimal headers for `EventSource`
   credentials: true, // Enable cookies and credentials
