@@ -4,10 +4,12 @@ import {
   addStoryPoint,
   createSession,
   joinSession,
+  updateDescription,
 } from "./sessions.controller";
 import {
   addPointSessionSchemaToJson,
   joinSessionBodySchemaToJson,
+  updateDescriptionSchemaToJson,
 } from "./sessions.schema";
 
 export async function sessionRoutes(app: FastifyInstance) {
@@ -28,5 +30,13 @@ export async function sessionRoutes(app: FastifyInstance) {
       schema: addPointSessionSchemaToJson,
     },
     addStoryPoint
+  );
+
+  app.post(
+    "/update-description/:sessionId",
+    {
+      schema: updateDescriptionSchemaToJson,
+    },
+    updateDescription
   );
 }

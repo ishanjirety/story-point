@@ -9,9 +9,11 @@ type TSession = {
 type TStory = {
   id: string;
   description: string;
-  votes: Array<{
-    id: string;
-    userId: string;
-    vote: number;
-  }>;
+  votes: {
+    [userId: string]: {
+      id: string;
+      userId: string;
+      vote: number;
+    };
+  };
 };

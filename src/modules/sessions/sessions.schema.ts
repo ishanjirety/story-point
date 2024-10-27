@@ -48,3 +48,14 @@ export const addPointSessionSchemaToJson = {
   body: zodToJsonSchema(addPointSessionSchema),
   params: zodToJsonSchema(addPointSessionParamSchema),
 };
+
+export const updateDescriptionSchema = z.object({
+  description: z.string({
+    required_error: "Description is required",
+  }),
+});
+export type TUpdateDescriptionSchema = z.infer<typeof updateDescriptionSchema>;
+export const updateDescriptionSchemaToJson = {
+  body: zodToJsonSchema(updateDescriptionSchema),
+  params: zodToJsonSchema(addPointSessionParamSchema),
+};

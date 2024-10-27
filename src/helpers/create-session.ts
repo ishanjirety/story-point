@@ -7,7 +7,7 @@ export function createNewSession(): TSession {
     activeStory: {
       description: "",
       id: v4(),
-      votes: [],
+      votes: {},
     },
   };
 }
