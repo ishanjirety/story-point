@@ -17,6 +17,9 @@ importers:
       crypto:
         specifier: ^1.0.1
         version: 1.0.1
+      deep-diff:
+        specifier: ^1.0.2
+        version: 1.0.2
       deep-equal:
         specifier: ^2.2.3
         version: 2.2.3
@@ -57,6 +60,9 @@ importers:
         specifier: ^3.23.8
         version: 3.23.8
     devDependencies:
+      '@types/deep-diff':
+        specifier: ^1.0.5
+        version: 1.0.5
       '@types/node':
         specifier: ^22.8.1
         version: 22.8.1
@@ -732,6 +738,9 @@ packages:
   '@types/debug@4.1.12':
     resolution: {integrity: sha512-vIChWdVG3LG1SMxEvI/AK+FWJthlrqlTu7fbrlywTkkaONwk/UAGaULXRlf8vkzFBLVm0zkMdCquhL5aOjhXPQ==}
 
+  '@types/deep-diff@1.0.5':
+    resolution: {integrity: sha512-PQyNSy1YMZU1hgZA5tTYfHPpUAo9Dorn1PZho2/budQLfqLu3JIP37JAavnwYpR1S2yFZTXa3hxaE4ifGW5jaA==}
+
   '@types/estree@1.0.6':
     resolution: {integrity: sha512-AYnb1nQyY49te+VRAVgmzfcgjYS91mY5P0TKUDCLEM+gNnA+3T6rWITXRLYCpahpqSQbN5cE+gHpnPyXjHWxcw==}
 
@@ -1314,6 +1323,9 @@ packages:
   decompress-response@6.0.0:
     resolution: {integrity: sha512-aW35yZM6Bb/4oJlZncMH2LCoZtJXTRxES17vE3hoRiowU2kWHaJKFkSBDnDR+cm9J+9QhXmREyIfv0pji9ejCQ==}
     engines: {node: '>=10'}
+
+  deep-diff@1.0.2:
+    resolution: {integrity: sha512-aWS3UIVH+NPGCD1kki+DCU9Dua032iSsO43LqQpcs4R3+dVv7tX0qBGjiVHJHjplsoUM2XRO/KB92glqc68awg==}
 
   deep-equal@2.2.3:
     resolution: {integrity: sha512-ZIwpnevOurS8bpT4192sqAowWM76JDKSHYzMLty3BZGSswgq6pBaH3DhCSW5xVAZICZyKdOBPjwww5wfgT/6PA==}
@@ -4378,6 +4390,8 @@ snapshots:
       '@types/ms': 0.7.34
     optional: true
 
+  '@types/deep-diff@1.0.5': {}
+
   '@types/estree@1.0.6': {}
 
   '@types/http-cache-semantics@4.0.4': {}
@@ -5085,6 +5099,8 @@ snapshots:
   decompress-response@6.0.0:
     dependencies:
       mimic-response: 3.1.0
+
+  deep-diff@1.0.2: {}
 
   deep-equal@2.2.3:
     dependencies:
